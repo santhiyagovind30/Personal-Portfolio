@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">MyPortfolio</a>
+      <button class="menu-btn" id="menuBtn"
+        aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Santhiya G</span></h1>
+        <h2>Full Stack Developer</h2>
+        <p>Aspiring Full Stack Developer with knowledge of frontend and backend technologies, including HTML, CSS, JavaScript, Python, Java, and SQL. Interested in developing responsive web applications and continuously improving programming and problem-solving skills.</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I am a passionate and motivated web developer
+          who enjoys building creative websites and
+          learning new technologies. My goal is to
+          become a skilled Full Stack Developer and
+          develop useful web applications.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Python</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">💬</div>
+          <h3>Asset Tracking</h3>
+          <p>Asset tracking refers to the process of monitoring physical assets, either through manual oversight or more commonly, through technology-enabled systems. These systems use various technologies like GPS, RFID, or barcode scanning to keep tabs on the location, status, and condition of assets. Businesses use asset tracking to improve efficiency, prevent loss, manage inventory, and optimize resource allocation. It's crucial in sectors like logistics, manufacturing, healthcare, and retail where knowing the whereabouts and condition of assets can significantly impact operations and costs.
+</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">✅</div>
+          <h3>CRISPR to Quantum Gene Editing</h3>
+          <p>CRISPR-Cas9, gene editing, quantum gene editing, quantum biology,
+quantum computing, molecular interactions, quantum entanglement, superposition,
+off-target effects, precision medicine, mutation correction, drug discovery, ethical
+considerations.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio
+            showcasing skills and projects.</p>
+          <span>HTML • CSS • JavaScript</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">📱</div>
+          <h3>Room Automation System Using NodeMCU ESP8266 With IR Sensor</h3>
+          <p>Room Automation System Using NodeMCU ESP8266 with IR Sensor is a smart home project that automates room appliances based on human presence. An IR sensor detects whether a person enters or leaves the room, and the NodeMCU ESP8266 processes the sensor data to control lights or fans automatically. This system helps save electricity, reduces manual effort, and provides an energy-efficient and cost-effective solution for homes, offices, and classrooms.</p>
+      </div>
+    
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-intro">
+        Have a question or want to collaborate?
+        Send me a message!
+      </p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name"
+          placeholder="Your Name" required>
+        <input type="email" id="email"
+          placeholder="Your Email" required>
+        <textarea id="message" rows="5"
+          placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">
+          Send Message
+        </button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> MyPortfolio.
+      All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
